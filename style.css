@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+height: 100vh;
+width: 100vw;
+display: flex;
+padding: 0;
+margin: 0;
+min-width: 900px;
+}
+
+input, label {
+    display:block;
+}
+
+
+.left-side{
+    width: 50%;
+    background-image: url(Tuckson.jpg);
+    background-size: 140vh;
+    background-repeat: no-repeat;
+    min-width: 450px;
+
+}
+
+.right-side{
+    display: flex;
+    width:50%;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    backdrop-filter: blur(25px);
+    background-color: rgba(114, 122, 105, 0.56);
+
+}
+
+.signup{
+    display: flex;
+    width: 100%;
+}
+
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    gap:20px;
+    background-color: rgba(114, 122, 105, 0.57);
+    box-shadow: 0 10px 20px -2px rgba(22, 22, 22, 0.292);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+
+.form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    min-width: 190px;
+    text-transform: uppercase;
+}
+
+.explanation{
+    padding-left: 10px;
+    font-size: x-large;
+    gap:15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-end{
+    padding-left: 10px;
+}
+
+input{
+    height:30px;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 50px;
+    margin-left: 10px;
+    height:40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+button:active{
+    background-color:rgba(114, 122, 105, 0.57);
+}
+
+input:focus{
+    border: 3px solid black;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid{
+    box-shadow: inset 0 -3px 0 0px rgb(182 68 68);
+}
+
+.error-wrapper {
+    position: relative;
+    margin-top: -1.5rem;
+}
+
+.pass-error-msg {
+    display: none;
+    position: absolute;
+    color:rgb(255, 0, 0);
+    font-size: 0.8rem;
+    left: 0.65rem;
+    top: 0.2rem;
+  }
+
+.error{
+    border: 2px solid red;
+}
